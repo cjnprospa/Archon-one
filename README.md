@@ -45,7 +45,27 @@ This new vision for Archon replaces the old one (the agenteer). Archon used to b
 - [Supabase](https://supabase.com/) account (free tier or local Supabase both work)
 - [OpenAI API key](https://platform.openai.com/api-keys) (Gemini and Ollama are supported too!)
 
-### Setup Instructions
+### ⚡ Good Morning (After Initial Setup)
+
+If Archon is already configured, use the automated daily startup command:
+
+```bash
+# Using the script directly
+./scripts/good-morning.sh
+
+# Or install the alias for easy access
+./scripts/good-morning-alias.sh
+source ~/.zshrc  # or ~/.bashrc
+good-morning
+```
+
+The `/good-morning` command will:
+- ✅ Start Docker Desktop if needed
+- ✅ Restart all Archon services with fresh builds
+- ✅ Validate service health across all ports
+- ✅ Show connection URLs and next steps
+
+### Setup Instructions (First Time)
 
 1. **Clone Repository**:
 
